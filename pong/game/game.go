@@ -60,7 +60,7 @@ func Create() *Game {
 		BallY:        300,
 		PaddleSpeed:  2,
 		PaddleWidth:  50,
-		PaddleHeight: 2,
+		PaddleHeight: 10,
 		PaddleX:      175,
 		PaddleY:      550,
 		WallLeft:     50,
