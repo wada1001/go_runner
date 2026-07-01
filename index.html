@@ -11,9 +11,9 @@
   <script>
     const go = new Go();
 
-    WebAssembly.instantiateStreaming(fetch("js/pong/game.wasm"), go.importObject)
+    WebAssembly.instantiateStreaming(fetch("js/pong.wasm"), go.importObject)
         .then((result) => {
-        go.run(result.instance);
+            go.run(result.instance);
         });
   </script>
 </body>

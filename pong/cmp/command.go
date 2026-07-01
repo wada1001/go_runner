@@ -23,7 +23,7 @@ var (
 )
 
 func (c *CreateTitleCmd) Exec(w donburi.World) error {
-	entry := w.Entry(w.Create(TitleStateTag, Title))
+	entry := w.Entry(w.Create(Title))
 	Title.SetValue(entry, TitleData{
 		Title: "Pong",
 	})
